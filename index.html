@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The AJAXson 5</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="request-gif.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron text-center">
+    <h1 class="font-weight-bold">The AJAXson 5</h1></div>
+        <div class="container"> 
+
+    <form id="form-gif-request" />
+    <div class="form-group"> 
+        <div id="well0" class="well">
+        <label>What kind of Jackson 5 related gif do you want?</label>
+        <input class="form-control" name="tag" type="text"/></div>
+        <div id="well1" class="well">
+        <label>Prove you are not a robot by answering this: </label><div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><span id="val">abd</span> + <span id="val2">xyz</span> = </span>
+            <input class="form-control" name="answer" type="text"/>
+        </div><p id="error"  hidden="true">No gift for you.</p></div>
+        <input class="btn btn-primary" type="submit" value="Get my Gif!" />
+    </div>
+    </form>
+    <p id="name" hidden="true`"></p>
+    <img id="gif" class="img-responsive center-block" src="" hidden="true"/>
+    <p id="feedback" hidden="true`"></p>
+
+
+</div>
+    <script>
+    var val1 = Math.floor((Math.random() * 10) + 1),
+    val2 = Math.floor((Math.random() * 10) + 1),
+    sum = val1 + val2;
+    $("#val").text(val1);
+    $("#val2").text(val2);
+    //$("#well1").attr("class", "alert alert-danger");
+    </script>
+    
+</body>
+</html>
